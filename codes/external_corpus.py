@@ -3,7 +3,7 @@ from nltk.corpus import CategorizedPlaintextCorpusReader
 from random import randint
 
 # 말뭉치 읽기
-reader = CategorizedPlaintextCorpusReader(r'/workspace/Python/NLP/mix20_rand700_tokens_cleaned/tokens', r'.*\.txt', cat_pattern=r'(\w+)/*')
+reader = CategorizedPlaintextCorpusReader(r'/workspace/NLP_python/tokens', r'.*\.txt', cat_pattern=r'(\w+)/*')
 print(reader.categories())
 print(reader.fileids())
 

@@ -15,7 +15,7 @@ synsets = wn.all_synsets(type)
 #     for lemma in synset.lemmas():
 #         lemmas.append(lemma.name())
 
-# pythonic version
+# ㄴpythonic version
 lemmas = [lemma.name() for synset in synsets for lemma in synset.lemmas()]
 
 # 중복 제거

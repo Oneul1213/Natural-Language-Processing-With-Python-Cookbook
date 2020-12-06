@@ -1,4 +1,4 @@
-#1장 말뭉치와 워드넷 - 외부 말뭉치 다운로드, 로드하고 액세스하기
+# 1장 말뭉치와 워드넷 - 외부 말뭉치 다운로드, 로드하고 액세스하기
 from nltk.corpus import CategorizedPlaintextCorpusReader
 from random import randint
 

@@ -27,12 +27,13 @@ def noContextTagger():
 
 def withContextTagger():
     def wordFeatures(words, wordPosInSentence):
+        # 모든 ing 형태 등을 추출
         endFeatures = {
             'last(1)': words[wordPosInSentence][-1],
             'last(2)': words[wordPosInSentence][-2:],
             'last(3)': words[wordPosInSentence][-3:],
         }
-        
+        # 이전 단어를 사용해 현재 단어가 동사인지 명사인지 확인
         if wordPosInSentence > 1:
             endFeatures['prev'] = words[wordPosInSentence - 1]
         else:
